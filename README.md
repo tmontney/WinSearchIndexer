@@ -16,3 +16,8 @@ This project creates a PSCmdlet DLL to wrap [ISearchCrawlScopeManager](https://d
 # Examples
 - [PowerShell Tests](./WinSearchIndexerPS/Test-WinSearchIndexer.ps1)
 - [Unit Tests](./TestWinSearchIndexer)
+
+# Resources
+Thanks to the Internet, I don't think I would have been able to put this together otherwise.
+- [Discovery and basic usage of ISearchCrawlScopeManager](https://blog.ironmansoftware.com/daily-powershell/powershell-windows-search-index-status/)
+- [Adding a location to be indexed](https://stackoverflow.com/a/13454571/1340075)
