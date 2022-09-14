@@ -17,6 +17,9 @@ This project creates a PSCmdlet DLL to wrap [ISearchCrawlScopeManager](https://d
 - [PowerShell Tests](./WinSearchIndexerPS/Test-WinSearchIndexer.ps1)
 - [Unit Tests](./TestWinSearchIndexer)
 
+# Issues
+The only way to free the DLL references is by closing PowerShell (the instance that called `Import-Module`). This shouldn't be an issue unless you're modifying this code or are looking to clean-up after running. If that instance needs to keep running, a work-around is to spawn a separate instance that references these DLLs.
+
 # Resources
 Thanks to the Internet, I don't think I would have been able to put this together otherwise.
 - [Discovery and basic usage of ISearchCrawlScopeManager](https://blog.ironmansoftware.com/daily-powershell/powershell-windows-search-index-status/)
